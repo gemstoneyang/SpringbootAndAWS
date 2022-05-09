@@ -20,7 +20,7 @@ script: "./gradlew clean build"
 before_deploy:
   - zip -r SpringbootAndAWS *
   - mkdir -p deploy
-  - mv freelec-springboot2-webservice.zip deploy/freelec-springboot2-webservice.zip
+  - mv SpringbootAndAWS.zip deploy/SpringbootAndAWS.zip
 
 deploy:
   - provider: s3
